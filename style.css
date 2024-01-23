@@ -1,5 +1,6 @@
 :root { 
     --background_color: #000000;
+    --login_color: rgb(77, 102, 57);
 }
 
 @font-face {
@@ -74,8 +75,8 @@ body {
 }
 
 #form-container { 
-    background-color: grey;
-    box-shadow: inset;
+    background-color: rgb(223, 223, 223);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4);
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -87,4 +88,46 @@ body {
 
 .paragraph-text { 
     margin: 30px;
+    margin-left: 20px;
+}
+
+.input-font { 
+    display: flex;
+    flex-direction: column;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.input-item { 
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+
+.form-row { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.input-feild { 
+    border-radius: 5px;
+    height: 25px;
+}
+
+#submit-button { 
+    background-color: var(--login_color);
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-weight: 800;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.log-in { 
+color: var(--login_color);
 }
