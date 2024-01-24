@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project: Forms</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -41,24 +42,25 @@
                     </div>
                     <div class="form-row" id="row2">
                         <div class="input-item">
-                            <label for="first-name" class="input-font">Email</label>
-                            <input type="text" id="first-name" name="firstName" class="input-feild">
+                            <label for="email" class="input-font">Email</label>
+                            <input type="email" id="email" name="firstName" class="input-feild">
                         </div>
 
                         <div class="input-item">
-                            <label for="last-name" class="input-font">Phone Number</label>
-                            <input type="text" id="last-name" name="lastName" class="input-feild">
+                            <label for="phone-number" class="input-font">Phone Number</label>
+                            <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                id="phone-number" name="lastName" class="input-feild">
                         </div>
                     </div>
                     <div class="form-row" id="row3">
                         <div class="input-item">
-                            <label for="first-name" class="input-font">Password</label>
-                            <input type="text" id="first-name" name="firstName" class="input-feild">
+                            <label for="password" class="input-font">Password</label>
+                            <input type="password" id="password" name="firstName" class="input-feild">
                         </div>
 
                         <div class="input-item">
-                            <label for="last-name" class="input-font">Confirm Password</label>
-                            <input type="text" id="last-name" name="lastName" class="input-feild">
+                            <label for="confirm-password" class="input-font">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="lastName" class="input-feild">
                         </div>
                     </div>
                     <form action="./form_assets/">
@@ -67,7 +69,7 @@
                 </div>
 
                 <button type="submit" id="submit-button" class="call-to-action-button">Create Account</button>
-                <p>Already have an account? <span class="log-in">Log in</span></p>
+                <p class="paragraph-text">Already have an account? <span class="log-in">Log in</span></p>
             </div>
         </div>
     </div>
